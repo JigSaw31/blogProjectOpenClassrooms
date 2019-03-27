@@ -1,0 +1,14 @@
+<h2>Posts</h2>
+
+<ul class="list-group">
+    <app-post-list-item-component
+      *ngFor="let post of posts"
+      [post]="post"></app-post-list-item-component>
+</ul>
+
+<div style="text-align: center; margin: 5px;">
+<button class="btn btn-primary" style="margin: 5px;"
+        (click)="onSave()">Enregistrer tous les posts</button>
+<button class="btn btn-primary" style="margin: 5px;"
+        (click)="onFetch()">Récupérer tous les posts</button>
+</div>
